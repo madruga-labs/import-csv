@@ -1,0 +1,36 @@
+{
+  "name": "mcp-server-typescript",
+  "version": "1.0.0",
+  "description": "Servidor para importação de dados meteorológicos CSV",
+  "main": "importCSV.js",
+  "scripts": {
+    "start": "node importCSV.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!node_modules/**",
+      "!coverage/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "cli-progress": "^3.12.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "p-limit": "^3.1.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
