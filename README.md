@@ -2,6 +2,9 @@
 
 Script simples para importação de dados meteorológicos de arquivos CSV para o Supabase.
 
+Dados obtidos da base de dados aberta: 
+https://www.kaggle.com/datasets/gregoryoliveira/brazil-weather-information-by-inmet/data
+
 ## Configuração
 
 1. Clone este repositório
